@@ -1,0 +1,161 @@
+@import url("https://fonts.googleapis.com/css?family=Quicksand:400,700&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+header {
+  display: inline;
+}
+
+body {
+  font-family: "Quicksand", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.header-img {
+  padding: 60px;
+  background-image: url("https://www.sports.uliege.be/upload/docs/image/jpeg/2021-07/salon_des_sports_rcae_2021-07-19_12-37-10_259.jpg");
+  background-color: #b4430e;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+}
+
+.judul {
+  background-color: #b4430e;
+  text-align: center;
+  padding: 10px;
+  width: 500px;
+  color: white;
+  font-size: 20px;
+}
+
+nav {
+  background-color: #862f06;
+  padding: 5px;
+  position: sticky;
+  top: 0;
+  overflow: hidden;
+}
+
+nav a {
+  font-size: 18px;
+  font-weight: 400;
+  text-decoration: none;
+  color: white;
+}
+
+nav a:hover {
+  font-weight: bold;
+}
+
+nav li {
+  display: inline;
+  list-style-type: none;
+  margin-right: 20px;
+}
+
+main {
+  padding: 20px;
+  overflow: auto;
+}
+
+#content {
+  float: left;
+  width: 70%;
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+  padding: 20px;
+  margin-top: 15px;
+}
+
+.card p {
+  font-size: small;
+  font-family: sans-serif;
+  text-align: justify;
+}
+
+h2,
+h3 {
+  color: #862f06;
+}
+
+.featured-image {
+  width: 100%;
+  max-height: 300px;
+  object-fit: cover;
+  object-position: center;
+}
+
+.featured-image-top {
+  width: 100%;
+  max-height: 300px;
+  object-fit: cover;
+  object-position: top;
+}
+
+.featured-image-full {
+  width: 100%;
+  max-width: 700px;
+  object-fit: cover;
+}
+
+aside {
+  float: right;
+  width: 30%;
+  padding-left: 20px;
+}
+
+.profile header {
+  text-align: center;
+}
+
+.profile img {
+  width: 200px;
+}
+
+.profile-info {
+  text-align: left;
+}
+
+#myBtn {
+  display: none; /* Hidden by default */
+  position: fixed; /* Fixed/sticky position */
+  bottom: 20px; /* Place the button at the bottom of the page */
+  right: 30px; /* Place the button 30px from the right */
+  z-index: 99; /* Make sure it does not overlap */
+  border: none; /* Remove borders */
+  outline: none; /* Remove outline */
+  background-color: red; /* Set a background color */
+  color: white; /* Text color */
+  cursor: pointer; /* Add a mouse pointer on hover */
+  padding: 15px; /* Some padding */
+  border-radius: 10px; /* Rounded corners */
+  font-size: 18px; /* Increase font size */
+}
+
+#myBtn:hover {
+  background-color: #555; /* Add a dark-grey background on hover */
+}
+
+footer {
+  padding: 20px;
+  color: white;
+  background-color: #862f06;
+  text-align: center;
+  font-weight: bold;
+}
+
+@media screen and (max-width: 1360px) {
+  #content,
+  aside {
+    width: 100%;
+    padding: 0;
+  }
+}
